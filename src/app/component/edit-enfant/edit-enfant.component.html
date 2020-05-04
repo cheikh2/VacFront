@@ -1,0 +1,122 @@
+<div class="col-md-6 offset-md-3 mt-5">
+    <div class="card">
+        <h4 class="card-header text-center">Modification d'un enfant</h4>
+        <div class="card-body">
+  
+<form [formGroup]="editForm" (ngSubmit)="onEditEnfant()">
+    
+    <div class="row mb-3">
+        <div class="col">
+        <label for="id">ID</label>
+        <input type="text" formControlName="id" [(ngModel)] = "enfant.id" name="id" class="form-control" readonly id="id">
+        </div>
+
+        <div class="form-group col">
+          <label for="prenom">Prenom</label>
+          <input formControlName="prenom" name="prenom" [(ngModel)] = "enfant.prenom" class="form-control" id="prenom">
+        </div>
+       
+        <div class="form-group col">
+            <label for="nom">Nom</label>
+            <input type="text" formControlName="nom" [(ngModel)] = "enfant.nom" class="form-control" name="nom" id="nom">
+        </div>
+    </div>
+    <div class="row mb-3 col">
+        <div class="col">
+            <label for="sexe">Sexe</label>
+            <input type="text" formControlName="sexe" [(ngModel)] = "enfant.sexe" class="form-control" name="sexe" id="sexe">
+        </div>
+   
+        <div class="form-group col">
+            <label for="prenommere">Prenom Mere</label>
+            <input type="text" formControlName="prenommere" [(ngModel)] = "enfant.prenommere" class="form-control" name="prenommere" id="prenommere">
+        </div>
+
+        <div class="form-group col">
+            <label for="nommere">Nom Mere</label>
+            <input type="text" formControlName="nommere"[(ngModel)] = "enfant.nommere" class="form-control" name="nommere" id="nommere">
+        </div>
+    </div>
+
+    <div class="row mb-3 col">
+        <div class="col">
+            <label for="adress">Adress</label>
+            <input required minlength="2" type="text" formControlName="adress" [(ngModel)] = "enfant.adress" class="form-control" name="adress" id="adress">
+        </div>
+
+        <div class="form-group col">
+            <label for="numetatcivil">Num Etat Civil</label>
+            <input formControlName="numetatcivil" class="form-control" [(ngModel)] = "enfant.numetatcivil" name="numetatcivil" id="numetatcivil">
+        </div>
+
+        <div class="form-group col">
+            <label for="telmere">Tel Mere</label>
+            <input type="number" formControlName="telmere" [(ngModel)] = "enfant.telmere" class="form-control" name="telmere" id="telmere">
+        </div>
+    </div>
+
+    <div class="row mb-3 col">
+        <div class="col">
+            <label for="date">Date de Naissance</label>
+            <input type="date" formControlName="datenaissance" [(ngModel)] = "enfant.datenaissance" class="form-control" name="datenaissance" id="datenaissance">
+        </div>
+
+        <div class="form-group col">
+            <label for="numordre">Num Ordre</label>
+            <input type="text" formControlName="numordre" [(ngModel)] = "enfant.numordre" class="form-control" name="numordre" id="numordre">
+        </div>
+
+        <div class="form-group col">
+            <label for="nomchefquartier">Nom Chef Quartier</label>
+            <input type="text" formControlName="nomchefquartier" [(ngModel)] = "enfant.nomchefquartier" class="form-control" name="nomchefquartier" id="nomchefquartier">
+        </div>
+    </div>
+
+    <div class="row mb-3 col">
+        <div class="col">
+            <label for="prenomchefquartier">Prenom Chef Quartier</label>
+            <input type="text" formControlName="prenomchefquartier" [(ngModel)] = "enfant.prenomchefquartier" class="form-control" name="prenomchefquartier" id="prenomchefquartier">
+        </div>
+
+        <div class="form-group col">
+            <label for="telchefquartier">Tel Chef Quartier</label>
+            <input type="number" formControlName="telchefquartier" [(ngModel)] = "enfant.telchefquartier" class="form-control" name="telchefquartier" id="telchefquartier">
+        </div> 
+
+        <div class="form-group col">
+            <label for="telbadiennegokh">Tel Badienne Gokh</label>
+            <input type="number" formControlName="telbadiennegokh" [(ngModel)] = "enfant.telbadiennegokh" class="form-control" name="telbadiennegokh" id="telbadiennegokh">
+        </div>
+    </div>
+
+    <div class="row mb-3 col">
+        <div class="col">
+            <label for="etatentree">Etat Entrée</label>
+            <input type="text" formControlName="etatentree" [(ngModel)] = "enfant.etatentree" class="form-control" name="etatentree" id="etatentree">
+        </div>
+       
+        <div class="form-group col">
+            <label for="etatsortie">Etat Sortie</label>
+            <input type="text" formControlName="etatsortie" [(ngModel)] = "enfant.etatsortie" class="form-control" name="etatsortie" id="etatsortie">
+        </div>
+
+        <div class="form-group col">
+            <label for="motifsortie">Motif Sortie</label>
+            <input type="text" formControlName="motifsortie" [(ngModel)] = "enfant.motifsortie" class="form-control" name="motifsortie" id="motifsortie">
+        </div>
+    </div>
+
+    <div class="row mb-3 col">
+        <div class="col">
+            <label for="prenombadienegokh">Prenom Badienne Gokh</label>
+            <input type="text" formControlName="prenombadienegokh" [(ngModel)] = "enfant.prenombadienegokh" class="form-control" name="prenombadienegokh" id="prenombadienegokh">
+        </div>
+
+        <div class="form-group col">
+            <label for="nombadienegokh">Nom Badienne Gokh</label>
+            <input type="text" formControlName="nombadienegokh" [(ngModel)] = "enfant.nombadienegokh" class="form-control" name="nombadienegokh" id="nombadienegokh">
+        </div>
+    </div>
+            <button class="btn btn-success btn-block">Modifier</button>
+  </form>
+  </div>

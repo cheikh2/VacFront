@@ -1,0 +1,118 @@
+<div class="col-md-6 offset-md-3 mt-5">
+    <div class="card">
+        <h4 class="card-header text-center">Enregistrement d'un enfant</h4>
+        <div class="card-body">
+  
+  <form [formGroup]="addForm" (ngSubmit)="onSaveEnfant()">
+
+    <div class="row mb-3">
+        <div class="col">
+          <label for="">Prenom</label>
+          <input required minlength="2" type="text" formControlName="prenom" class="form-control" placeholder="prenom" id="prenom">
+        </div>
+       
+        <div class="form-group col">
+            <label for="">Nom</label>
+            <input required minlength="2" type="text" formControlName="nom" class="form-control" placeholder="nom" id="nom">
+        </div>
+
+        <div class="form-group col">
+            <label for="">Sexe</label>
+            <input required minlength="2" type="text" formControlName="sexe" class="form-control" placeholder="sexe" id="sexe">
+        </div>
+    </div>
+
+    <div class="row mb-3">     
+        <div class="col">
+            <label for="">Prenom Mere</label>
+            <input required minlength="2" type="text" formControlName="prenommere" class="form-control" placeholder="prenommere" id="prenommere">
+        </div>
+
+        <div class="col">
+            <label for="">Nom Mere</label>
+            <input required minlength="2" type="text" formControlName="nommere" class="form-control" placeholder="nommere" id="nommere">
+        </div>
+
+        <div class="form-group col">
+            <label for="">Adress</label>
+            <input required minlength="2" type="text" formControlName="adress" class="form-control" placeholder="adress" id="adress">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <label for="">Num Etat Civil</label>
+            <input required minlength="2" type="text" formControlName="numetatcivil" class="form-control" placeholder="numetatcivil" id="numetatcivil">
+        </div>
+
+    
+        <div class="col">
+            <label for="">Tel Mere</label>
+            <input required minlength="2" type="number" formControlName="telmere" class="form-control" placeholder="telmere" id="telmere">
+        </div>
+
+        <div class="form-group col">
+            <label for="">Date de Naissance</label>
+            <input required minlength="2" type="date" formControlName="datenaissance" class="form-control" placeholder="datenaissance" id="datenaissance">
+        </div>
+</div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <label for="">Num Ordre</label>
+            <input required minlength="2" type="text" formControlName="numordre" class="form-control" placeholder="numordre" id="numordre">
+        </div>
+
+        <div class="form-group col">
+            <label for="">Nom Chef Quartier</label>
+            <input required minlength="2" type="text" formControlName="nomchefquartier" class="form-control" placeholder="nomchefquartier" id="nomchefquartier">
+        </div>
+
+        <div class="col">
+            <label for="">Prenom Chef Quartier</label>
+            <input required minlength="2" type="text" formControlName="prenomchefquartier" class="form-control" placeholder="prenomchefquartier" id="prenomchefquartier">
+        </div>
+</div>
+    
+    <div class="row mb-3">
+
+        <div class="col">
+            <label for="">Tel Chef Quartier</label>
+            <input required minlength="2" type="number" formControlName="telchefquartier" class="form-control" placeholder="telchefquartier" id="telchefquartier">
+        </div> 
+
+        <div class="col">
+            <label for="">Tel Badienne Gokh</label>
+            <input required minlength="2" type="number" formControlName="telbadiennegokh" class="form-control" placeholder="telbadiennegokh" id="telbadiennegokh">
+        </div>
+
+        <div class="form-group col">
+            <label for="">Etat Entrée</label>
+            <input required minlength="2" type="text" formControlName="etatentree" class="form-control" placeholder="etatentree" id="etatentree">
+        </div>
+</div>
+        <div class="row mb-3">
+            <div class="col">
+            <label for="">Etat Sortie</label>
+            <input required minlength="2" type="text" formControlName="etatsortie" class="form-control" placeholder="etatsortie" id="etatsortie">
+        </div>
+
+        <div class="form-group col">
+            <label for="">Motif Sortie</label>
+            <input required minlength="2" type="text" formControlName="motifsortie" class="form-control" placeholder="motifsortie" id="motifsortie">
+        </div>
+
+        <div class="col">
+            <label for="">Prenom Badienne Gokh</label>
+            <input required minlength="2" type="text" formControlName="prenombadienegokh" class="form-control" placeholder="prenombadienegokh" id="prenombadienegokh">
+        </div>
+</div>
+    <div class="row mb-3">
+        <div class="form-group col">
+            <label for="">Nom Badienne Gokh</label>
+            <input required minlength="2" type="text" formControlName="nombadienegokh" class="form-control" placeholder="nombadienegokh" id="nombadienegokh">
+        </div>
+    </div>
+            <button class="btn btn-success btn-block">Enregistrer</button>
+  </form>
+  </div>

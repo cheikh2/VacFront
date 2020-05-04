@@ -1,0 +1,62 @@
+ <!-- DataTales Example -->
+ <div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <button class="m-0 font-weight-bold text-primary" (click)="onEnfants()">Liste des enfants</button>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+          <tr class="bg-gradient-light">
+            <th class="hidden">Id</th>
+              <th>Prenom</th>
+              <th>Nom</th>
+              <th>Sexe</th>
+              <th>Prenom Mere</th>
+              <th>Nom Mere</th>
+              <th>Adresse</th>
+              <th>Numetatcivil</th>
+              <th>Telmere</th>
+              <th>Datenaissance</th>
+              <th>Numordre</th>
+              <th>Nomchefquartier</th>
+              <th>Prenomchefquartier</th>
+              <th>Telchefquartier</th>
+              <th>Telbadiennegokh</th>
+              <th>Etatentree</th>
+              <th>etatSortie</th>
+              <th>motifsortie</th>
+              <th>Prenombadienegokh</th>
+              <th>Nombadienegokh</th>
+              <th>Modifier</th>
+ 
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let enfant of enfants">
+              <td class="hidden">{{enfant.id}}</td>
+              <td>{{ enfant.prenom }}</td>
+              <td>{{ enfant.nom }}</td>
+              <td>{{ enfant.sexe }}</td>
+              <td>{{ enfant.prenommere }}</td>
+              <td>{{ enfant.nommere }}</td>
+              <td>{{ enfant.adresse }}</td>
+              <td>{{ enfant.numetatcivil }}</td>
+              <td>{{ enfant.telmere }}</td>
+              <td>{{ enfant.datenaissance }}</td>
+              <td>{{ enfant.numordre }}</td>
+              <td>{{ enfant.nomchefquartier }}</td>
+              <td>{{ enfant.prenomchefquartier }}</td> 
+              <td>{{ enfant.telchefquartier }}</td>
+              <td>{{ enfant.telbadiennegokh }}</td>
+              <td>{{ enfant.etatentree }}</td>
+              <td>{{ enfant.etatsortie }}</td>
+              <td>{{ enfant.motifsortie }}</td>
+              <td>{{ enfant. prenombadienegokh }}</td>
+              <td>{{ enfant.nombadienegokh }}</td>
+              <td>
+                <button class="btn btn-success" (click)="editEnfant(enfant)" style="margin-left: 20px;"> Editer</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>

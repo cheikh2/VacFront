@@ -13,7 +13,6 @@ import { AuthServiceService } from './authentification/auth-service.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ActivateGuard } from './activate.guard';
-import { RegistreComponent } from './component/registre/registre.component';
 import { JwtinterceptorService } from './helpers/jwtinterceptor.service';
 import { ListeEnfantComponent } from './component/liste-enfant/liste-enfant.component';
 import { AddEnfantComponent } from './component/add-enfant/add-enfant.component';
@@ -28,7 +27,6 @@ import { EditEnfantComponent } from './component/edit-enfant/edit-enfant.compone
     FooterComponent,
     DashboardComponent,
     LoginComponent,
-    RegistreComponent,
     ListeEnfantComponent,
     AddEnfantComponent,
     EditEnfantComponent

@@ -40,8 +40,8 @@
 
     <div class="row mb-3 col">
         <div class="col">
-            <label for="adress">Adress</label>
-            <input required minlength="2" type="text" formControlName="adress" [(ngModel)] = "enfant.adress" class="form-control" name="adress" id="adress">
+            <label for="adresse">Adress</label>
+            <input required minlength="2" type="text" formControlName="adresse" [(ngModel)] = "enfant.adresse" class="form-control" name="adresse" id="adress">
         </div>
 
         <div class="form-group col">
@@ -118,5 +118,6 @@
         </div>
     </div>
             <button class="btn btn-success btn-block">Modifier</button>
+            <button mat-button (click)="stepper.reset()" class="btn btn-outline-secondary" > Annuler</button>
   </form>
   </div>

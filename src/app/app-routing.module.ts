@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { LoginComponent } from './authentification/login/login.component';
 import { ActivateGuard } from './activate.guard';
-import { RegistreComponent } from './component/registre/registre.component';
+
 
 
 const routes: Routes = [
@@ -15,7 +15,6 @@ const routes: Routes = [
 children:[
   {path:'dashboard', component:DashboardComponent, canActivate: [ActivateGuard]},
   {path:'login', component:LoginComponent},
-  {path:'registre', component:RegistreComponent},
   {path:'liste-enfant', component:ListeEnfantComponent},
   {path:'add-enfant', component:AddEnfantComponent},
   {path:'edit-enfant', component:EditEnfantComponent}

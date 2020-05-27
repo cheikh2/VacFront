@@ -28,7 +28,7 @@ export class EditEnfantComponent implements OnInit {
       sexe: ['', Validators.required],
       prenommere: ['', Validators.required],
       nommere: ['', Validators.required],
-      adress: ['', Validators.required],
+      adresse: ['', Validators.required],
       numetatcivil: ['', Validators.required],
       telmere: ['', Validators.required],
       datenaissance: ['', Validators.required],
@@ -54,7 +54,7 @@ onEditEnfant() {
         this.enfantService.putEnfant(this.editForm.value)
         .subscribe(
           data => {
-              alert('Enfant updated successfully.');
+              alert(data.prenom+' '+data.nom+' a été modifié avec succès.');
               this.router.navigate(['liste-enfant']);
           },
           error=>{
